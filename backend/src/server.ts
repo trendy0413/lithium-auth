@@ -5,13 +5,20 @@ import compression from 'compression'
 import cors from 'cors'
 
 import { MONGODB_URI } from './util/secrets'
+
+import { UserRoutes } from './routes/userRoutes'
 class Server {
   public app: express.Application
 
   constructor() {
     this.app = express()
     this.config()
+    this.routes()
     this.mongo()
+  }
+
+  public routes(): void {
+    this.app.use('/api/auth', new UserRoutes().router)
   }
 
   public config(): void {
