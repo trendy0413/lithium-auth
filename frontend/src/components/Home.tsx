@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const Home: React.FC = () => {
   return (
     <div className="container">
       <header className="jumbotron">
-        <h3>Hello World</h3>
+        <h3>Welcome to the Lithium!</h3>
       </header>
     </div>
   );

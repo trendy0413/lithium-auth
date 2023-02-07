@@ -24,8 +24,14 @@ After you have completed the task, please send us a .zip file of the repo, but f
 
 `Oliver He`
 
+`oliverhework@gmail.com`
+
 **Why did you choose the tech you did?**
 
-`Don't worry about detailing every single package used, but try and justify some of your choices and your reason for making them. We want people who think in features, and how they impact the wider systems going forward, so we expect you to make reasoned decisions with intent!`
+`JWT Authentication Flow for User Signup & User Login`
 
+`Creating React Components with Form Validation using Formik and Yup`
 
+`React Typescript Components for accessing protected Resources (Authorization)`
+
+`Added verifyToken middleware to authenticate permission required route`

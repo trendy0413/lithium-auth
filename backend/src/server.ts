@@ -7,6 +7,7 @@ import cors from 'cors'
 import { MONGODB_URI } from './util/secrets'
 
 import { UserRoutes } from './routes/userRoutes'
+import { MainRoutes } from './routes/mainRoutes'
 class Server {
   public app: express.Application
 
@@ -19,6 +20,7 @@ class Server {
 
   public routes(): void {
     this.app.use('/api/auth', new UserRoutes().router)
+    this.app.use('/api/test', new MainRoutes().router)
   }
 
   public config(): void {

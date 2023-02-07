@@ -11,5 +11,6 @@ export class UserRoutes {
   }
   routes() {
     this.router.post('/signup', this.userController.registerUser)
+    this.router.post('/signin', this.userController.authenticateUser)
   }
 }
